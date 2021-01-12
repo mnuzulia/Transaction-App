@@ -17,6 +17,12 @@ const TransactionItem = ({
     {transactionItemData.map((data) => (
       <View>
         <Text key={data.toString()}>Nama produk: {data.sku.product.nama}</Text>
+        <Image
+          source={{
+            uri: data.sku.product.gambar_1,
+          }}
+          style={{width: 50, height: 50}}
+        />
       </View>
     ))}
   </View>
